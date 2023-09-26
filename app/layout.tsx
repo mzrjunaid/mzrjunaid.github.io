@@ -1,7 +1,8 @@
-import { Footer, Navbar, SocialLinks } from "@/components";
+import { Footer, Header, Leftside, SocialLinks } from "@/components";
 import { montserrat, anton } from "./fonts";
 import "./globals.css";
 import type { Metadata } from "next";
+import MenuContextProvider from "@/contexts/menu-context";
 
 export const metadata: Metadata = {
   title: "Junaid Mazhar - Portfolio",
@@ -17,17 +18,22 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${anton.variable} ${montserrat.variable} text-white relative`}
+      className={`${anton.variable} ${montserrat.variable} relative dark`}
     >
-      <body className="bg-gradient-to-r from-blue-400 to-teal-400 via-purple-600 animate-gradient-x">
-        <Navbar />
-        <main className="font-montserrat">{children}</main>
-        <Footer />
-        <SocialLinks
-          size={28}
-          socialLinkStyle="flex flex-col gap-2 fixed bottom-16 right-3 bg-black bg-opacity-30 p-2 rounded-lg"
-        />
-      </body>
+      <MenuContextProvider>
+        <body className="dark:bg-slate-900 dark:text-white">
+          <Header />
+          <Leftside />
+          <main className="font-montserrat">
+            {children}
+            <SocialLinks
+              size={28}
+              socialLinkStyle="flex flex-col gap-2 fixed bottom-16 right-3 bg-black bg-opacity-30 p-2 rounded-lg"
+            />
+          </main>
+          <Footer />
+        </body>
+      </MenuContextProvider>
     </html>
   );
 }

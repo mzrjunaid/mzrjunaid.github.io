@@ -19,7 +19,7 @@ export const PicShape = ({ shapeStyle, imageSrc }: svgProps) => (
                 height="100"
                 width="100"
                 xlinkHref={imageSrc}
-                className="filter:"
+                className="object-fill"
             />
         </g>
     </svg>

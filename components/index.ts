@@ -1,6 +1,9 @@
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import SocialLinks from "./SocialLinks";
-import { PicShape } from "./Shape";
+import Navbar from "./Header/Navbar";
+import Footer from "./Footer/Footer";
+import Leftside from "./Left-aside/Leftside";
+import Header from "./Header/Header";
 
-export { Navbar, Footer, SocialLinks, PicShape };
+import SocialLinks from "./Elements/SocialLinks";
+import { PicShape } from "./Elements/Shape";
+
+export { Header, Navbar, Footer, Leftside, SocialLinks, PicShape };

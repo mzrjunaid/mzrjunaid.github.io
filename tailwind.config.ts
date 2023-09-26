@@ -7,6 +7,7 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   mode: "jit",
+  darkMode: "class",
   theme: {
     extend: {
       animation: {

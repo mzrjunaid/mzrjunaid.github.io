@@ -20,7 +20,7 @@ const SocialLinks = ({ size, socialLinkStyle }: SocialProps) => {
         className="group/item relative"
       >
         <FaLinkedin size={size} />
-        <span className="invisible group-hover/item:visible absolute top-0 right-9 bg-black bg-opacity-80 py-1 px-3 rounded-lg">
+        <span className="invisible group-hover/item:visible absolute top-0 right-9 text-white bg-black/80  py-1 px-3 rounded-lg">
           @junaidmazhar
         </span>
       </Link>
@@ -30,7 +30,7 @@ const SocialLinks = ({ size, socialLinkStyle }: SocialProps) => {
         className="group/item relative"
       >
         <FaSquareGithub size={size} />
-        <span className="invisible group-hover/item:visible absolute top-0 right-9 bg-black bg-opacity-80 py-1 px-3 rounded-lg">
+        <span className="invisible group-hover/item:visible absolute top-0 right-9 text-white bg-black/80  py-1 px-3 rounded-lg">
           @mzrjunaid
         </span>
       </Link>
@@ -40,7 +40,7 @@ const SocialLinks = ({ size, socialLinkStyle }: SocialProps) => {
         className="group/item relative"
       >
         <FaSquareFacebook size={size} />
-        <span className="invisible group-hover/item:visible absolute top-0 right-9 bg-black bg-opacity-80 py-1 px-3 rounded-lg">
+        <span className="invisible group-hover/item:visible absolute top-0 right-9 text-white bg-black/80  py-1 px-3 rounded-lg">
           @m.junaidmazhar
         </span>
       </Link>
@@ -50,7 +50,7 @@ const SocialLinks = ({ size, socialLinkStyle }: SocialProps) => {
         className="group/item relative"
       >
         <FaSquareInstagram size={size} />
-        <span className="invisible group-hover/item:visible absolute top-0 right-9 bg-black bg-opacity-80 py-1 px-3 rounded-lg">
+        <span className="invisible group-hover/item:visible absolute top-0 right-9 text-white bg-black/80  py-1 px-3 rounded-lg">
           @junaid.muhamd
         </span>
       </Link>

@@ -1,0 +1,20 @@
+{
+  "navigation": [
+    {
+      "name": "Home",
+      "link": "/"
+    },
+    {
+      "name": "Projects",
+      "link": "/Projects"
+    },
+    {
+      "name": "Experience",
+      "link": "/Experience"
+    },
+    {
+      "name": "About",
+      "link": "/About"
+    }
+  ]
+}
