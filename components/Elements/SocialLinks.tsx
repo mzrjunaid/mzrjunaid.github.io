@@ -1,61 +1,50 @@
+import socialLinksData from "@/data/socialLinks.json";
 import Link from "next/link";
-import {
-  FaLinkedin,
-  FaSquareFacebook,
-  FaSquareGithub,
-  FaSquareInstagram,
-} from "react-icons/fa6";
+import SocialIcon from "../Elements/SocialIcon";
 
 interface SocialProps {
   socialLinkStyle?: string;
   size: number;
 }
 
-const SocialLinks = ({ size, socialLinkStyle }: SocialProps) => {
+export const FloatingSocialLinks = ({ size, socialLinkStyle }: SocialProps) => {
+  const socialLinks = socialLinksData.socialLinks;
   return (
     <div className={`parent ${socialLinkStyle}`}>
-      <Link
-        href={"https://www.linkedin.com/in/junaidmazhar/"}
-        target="__blank"
-        className="group/item relative"
-      >
-        <FaLinkedin size={size} />
-        <span className="invisible group-hover/item:visible absolute top-0 right-9 text-white bg-black/80  py-1 px-3 rounded-lg">
-          @junaidmazhar
-        </span>
-      </Link>
-      <Link
-        href={"https://github.com/mzrjunaid"}
-        target="__blank"
-        className="group/item relative"
-      >
-        <FaSquareGithub size={size} />
-        <span className="invisible group-hover/item:visible absolute top-0 right-9 text-white bg-black/80  py-1 px-3 rounded-lg">
-          @mzrjunaid
-        </span>
-      </Link>
-      <Link
-        href={"https://www.facebook.com/m.junaidmazhar"}
-        target="__blank"
-        className="group/item relative"
-      >
-        <FaSquareFacebook size={size} />
-        <span className="invisible group-hover/item:visible absolute top-0 right-9 text-white bg-black/80  py-1 px-3 rounded-lg">
-          @m.junaidmazhar
-        </span>
-      </Link>
-      <Link
-        href={"https://www.instagram.com/junaid.muhamd/"}
-        target="__blank"
-        className="group/item relative"
-      >
-        <FaSquareInstagram size={size} />
-        <span className="invisible group-hover/item:visible absolute top-0 right-9 text-white bg-black/80  py-1 px-3 rounded-lg">
-          @junaid.muhamd
-        </span>
-      </Link>
+      {socialLinks.map((item) => (
+        <Link
+          href={item.url}
+          target="__blank"
+          className="group/item relative"
+          key={item.url}
+        >
+          <SocialIcon icon={item.media.toLowerCase()} size={size} />
+          <span className="invisible group-hover/item:visible absolute top-0 right-9 text-white bg-black/80  py-1 px-3 rounded-lg">
+            @{item.username}
+          </span>
+        </Link>
+      ))}
     </div>
   );
 };
 
-export default SocialLinks;
+
+export const LeftMenuSocialLinks = () => {
+  const socialLinks = socialLinksData.socialLinks;
+  return (
+    <div className="w-full flex flex-col gap-4 py-5 lg:px-4 overflow-hidden">
+      {socialLinks.map((item) => (
+        <Link
+          href={item.url}
+          key={item.media}
+          className="flex flex-row items-center gap-4 hover:hoverItem"
+        >
+          <SocialIcon icon={item.media.toLowerCase()} size={24} />
+          <span className="text-xs xl:text-lg font-semibold tracking-wider">
+            {item.media}
+          </span>
+        </Link>
+      ))}
+    </div>
+  );
+};

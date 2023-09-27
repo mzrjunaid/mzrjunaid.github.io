@@ -1,4 +1,4 @@
-import { Footer, Header, Leftside, SocialLinks } from "@/components";
+import { Footer, Header, Leftside, FloatingSocialLinks } from "@/components";
 import { montserrat, anton } from "./fonts";
 import "./globals.css";
 import type { Metadata } from "next";
@@ -23,15 +23,15 @@ export default function RootLayout({
       <MenuContextProvider>
         <body className="dark:bg-slate-900 dark:text-white">
           <Header />
-          <Leftside />
-          <main className="font-montserrat">
+          <div className="font-montserrat grid grid-cols-12">
+            <Leftside />
             {children}
-            <SocialLinks
-              size={28}
-              socialLinkStyle="flex flex-col gap-2 fixed bottom-16 right-3 bg-black bg-opacity-30 p-2 rounded-lg"
-            />
-          </main>
+          </div>
           <Footer />
+          <FloatingSocialLinks
+            size={28}
+            socialLinkStyle="flex flex-col gap-2 fixed bottom-32 right-3 bg-black bg-opacity-30 p-2 rounded-lg"
+          />
         </body>
       </MenuContextProvider>
     </html>

@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav
       className="flex flex-row gap-4 font-roboto uppercase border py-2 px-5
         rounded-full dark:bg-white/30 dark:text-white
-        fixed bottom-3 left-1/2 -translate-x-1/2 md:hidden
+        fixed bottom-14 left-1/2 -translate-x-1/2 md:hidden
         "
     >
       {data.map((item) => (

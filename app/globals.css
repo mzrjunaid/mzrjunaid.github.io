@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components {
   .parent:hover > :not(:hover) {
     @apply opacity-50;
+  }
+  .hoverItem {
+    @apply transform transition-transform ease-in-out duration-500 scale-105 translate-x-4;
   }
 }

@@ -10,7 +10,7 @@ import { useMenuContext } from "@/contexts/menu-context";
 const Header = () => {
   const { setMenuOpen } = useMenuContext();
   return (
-    <header className="w-full border-b px-3 py-3">
+    <header className="w-full border-b px-3 py-3 z-50 absolute bg-slate-900">
       <div className="mx-auto flex flex-row justify-between 2xl:container">
         <Logo />
         <div className="flex flex-row items-center gap-10">
