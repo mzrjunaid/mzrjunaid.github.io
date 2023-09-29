@@ -9,4 +9,8 @@
   .hoverItem {
     @apply transform transition-transform ease-in-out duration-500 scale-105 translate-x-4;
   }
+  .hover__link {
+    @apply bg-gradient-to-r from-yellow-200 to-yellow-200 bg-[length:0px_4px] 
+    hover:bg-[length:100%_4px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500;
+  }
 }

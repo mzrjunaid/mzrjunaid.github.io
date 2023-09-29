@@ -40,7 +40,7 @@ export const LeftMenuSocialLinks = () => {
           className="flex flex-row items-center gap-4 hover:hoverItem"
         >
           <SocialIcon icon={item.media.toLowerCase()} size={24} />
-          <span className="text-xs xl:text-lg font-semibold tracking-wider">
+          <span className="text-xs xl:text-lg font-medium tracking-wider">
             {item.media}
           </span>
         </Link>
