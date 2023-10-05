@@ -12,7 +12,7 @@ const Leftside = () => {
     <aside
       className={`${
         menuOpen ? "" : "hidden"
-      } absolute md:block md:relative w-full h-screen col-span-2 px-2 xl:px-3 py-2 z-[999] md:z-40 bg-slate-50 dark:bg-slate-900 `}
+      } absolute md:sticky top-0 md:block w-full h-screen col-span-2 px-2 xl:px-3 py-2 z-[999] md:z-40 bg-slate-50 dark:bg-slate-900`}
     >
       <div className="flex flex-row justify-between md:justify-center py-1 sm:invisible border-b border-gray-300">
         <Logo />

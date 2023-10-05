@@ -21,12 +21,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${anton.variable} ${montserrat.variable} bg-slate-50 dark:bg-slate-900 dark`}
+      className={`${anton.variable} ${montserrat.variable} dark`}
       suppressHydrationWarning={false}
     >
       <MenuContextProvider>
-        <body className="relative font-montserrat grid grid-cols-12  dark:bg-slate-900  dark:text-white">
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <body className="relative font-montserrat grid grid-cols-12  dark:bg-slate-900 dark:text-white">
+          <ThemeProvider attribute="class" defaultTheme="dark">
             <Header />
             <Leftside />
             <main className="w-full py-[64px] md:px-4 md:py-[5.4rem] col-span-12 md:col-span-10">

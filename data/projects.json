@@ -1,0 +1,22 @@
+{
+  "frontendProjects": [
+    {
+      "project": "Jadoo Traveling Agency",
+      "lang": [
+        "HTML5",
+        "CSS3",
+        "Tailwind CSS",
+        "ReactJS",
+        "NextJS",
+        "Webpack",
+        "Git",
+        "Github Pages",
+        "React Icons",
+        "Figma"
+      ],
+      "imageName": "jadooAgency",
+      "url": "https://github.com/mzrjunaid/jadootravelagency"
+    }
+  ],
+  "backendProjects": []
+}

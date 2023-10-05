@@ -28,7 +28,6 @@ export const FloatingSocialLinks = ({ size, socialLinkStyle }: SocialProps) => {
   );
 };
 
-
 export const LeftMenuSocialLinks = () => {
   const socialLinks = socialLinksData.socialLinks;
   return (
@@ -37,10 +36,10 @@ export const LeftMenuSocialLinks = () => {
         <Link
           href={item.url}
           key={item.media}
-          className="flex flex-row items-center gap-4 hover:hoverItem"
+          className="group flex flex-row items-center gap-4 hover:hoverItem"
         >
           <SocialIcon icon={item.media.toLowerCase()} size={24} />
-          <span className="text-xs xl:text-lg font-medium tracking-wider">
+          <span className="text-xs xl:text-lg font-medium tracking-wider group-hover__link">
             {item.media}
           </span>
         </Link>
