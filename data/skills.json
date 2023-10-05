@@ -1,0 +1,29 @@
+{
+  "frontend": {
+    "title": "Frontend",
+    "lang": ["HTML5", "CSS3", "JavaScript", "TypeScript"],
+    "framework": [
+      "ReactJS",
+      "NextJS",
+      "Tailwind CSS",
+      "Bootstrap 5",
+      "React Native"
+    ],
+    "tools": [
+      "Git",
+      "Github",
+      "Webpack",
+      "Firebase",
+      "AWS EC2/S3",
+      "Vercel",
+      "Figma",
+      "Adobe XD"
+    ]
+  },
+  "backend": {
+    "title": "Backend",
+    "lang": ["Python"],
+    "framework": ["Django"],
+    "tools": ["Git", "Github", "Webpack", "Firebase", "AWS EC2/S3", "Vercel"]
+  }
+}

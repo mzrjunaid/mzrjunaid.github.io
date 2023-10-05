@@ -35,7 +35,7 @@ export default function RootLayout({
             <Footer />
             <FloatingSocialLinks
               size={28}
-              socialLinkStyle="flex flex-col gap-2 fixed bottom-32 right-3 bg-black bg-opacity-30 p-2 rounded-lg md:hidden"
+              socialLinkStyle="flex flex-col gap-2 fixed bottom-32 right-3 bg-black bg-opacity-30 p-2 z-50 rounded-lg md:hidden"
             />
           </ThemeProvider>
         </body>

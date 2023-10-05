@@ -1,21 +1,13 @@
-import Image from "next/image";
-import React from "react";
-import { FloatingSocialLinks } from "../Elements/SocialLinks";
-
-import cover from "@/public/images/cover2.jpeg";
-import junaid from "@/public/images/junaid.jpg";
 import Link from "next/link";
+import Image from "next/image";
 import { FaEnvelope } from "react-icons/fa6";
+
+import junaid from "@/public/images/junaid.jpg";
 
 const Cover = () => {
   return (
-    <div className="w-full h-[200px] overflow-hidden md:rounded-3xl relative">
-      <Image
-        src={cover}
-        alt="cover"
-        className="absolute h-[200px] object-cover bg-no-repeat blur-[0.15rem]"
-      />
-      <div className="absolute w-full h-full flex flex-row text-white px-3 md:px-16">
+    <div className="w-full h-[200px] overflow-hidden md:rounded-3xl relative bg-[url('../public/images/cover2.jpg')] bg-cover bg-no-repeat">
+      <div className="absolute w-full h-full flex flex-row text-white px-3 md:px-16 backdrop-blur-sm">
         <div className="flex-1 flex flex-row w-full justify-between">
           <div className="flex items-center gap-2 md:gap-5">
             <Image

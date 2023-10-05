@@ -1,9 +1,10 @@
-import Cover from "@/components/Home/Cover";
+import { Cover, Resume } from "@/components";
 
 export default function Home() {
   return (
-    <section>
+    <section className="flex flex-col gap-8">
       <Cover />
+      <Resume />
     </section>
   );
 }

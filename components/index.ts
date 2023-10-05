@@ -9,9 +9,15 @@ import {
 } from "./Elements/SocialLinks";
 import { PicShape } from "./Elements/Shape";
 
+//Home Components
+import Cover from "./Home/Cover";
+import Resume from "./Home/Resume";
+
 export {
   Header,
   Navbar,
+  Cover,
+  Resume,
   Footer,
   Leftside,
   FloatingSocialLinks,
