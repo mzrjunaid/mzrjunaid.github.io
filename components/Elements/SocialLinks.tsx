@@ -37,6 +37,7 @@ export const LeftMenuSocialLinks = () => {
           href={item.url}
           key={item.media}
           className="group flex flex-row items-center gap-4 hover:hoverItem"
+          aria-label={item.media}
         >
           <SocialIcon icon={item.media.toLowerCase()} size={24} />
           <span className="text-xs xl:text-lg font-medium tracking-wider group-hover__link">
