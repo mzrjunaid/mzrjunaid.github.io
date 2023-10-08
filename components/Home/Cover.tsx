@@ -2,20 +2,20 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaEnvelope } from "react-icons/fa6";
 
-import junaid from "@/public/images/junaid.jpg";
+import junaid from "@/public/images/junaid.webp";
 
 const Cover = () => {
   return (
-    <div className="w-full h-[200px] overflow-hidden md:rounded-3xl relative bg-[url('../public/images/cover2.jpg')] bg-cover bg-no-repeat">
-      <div className="absolute w-full h-full flex flex-row text-white px-3 md:px-16 backdrop-blur-sm">
+    <div className="w-full h-[200px] overflow-hidden md:rounded-3xl relative bg-[url('../public/images/home/cover-2.webp')] bg-cover bg-no-repeat">
+      <div className="absolute w-full h-full flex flex-row text-white px-3 md:px-16 backdrop-blur-[2px]">
         <div className="flex-1 flex flex-row w-full justify-between">
           <div className="flex items-center gap-2 md:gap-5">
             <Image
               src={junaid}
               alt="Junaid"
-              width={200}
-              height={200}
-              className="rounded-full w-24 md:w-32 object-fill"
+              width={150}
+              height={150}
+              className="rounded-full w-24 md:w-32 object-cover"
             />
             <div className="flex flex-col gap-1.5 md:gap-2.5">
               <h2 className="text-2xl sm:text-3xl font-semibold uppercase ms-2">
