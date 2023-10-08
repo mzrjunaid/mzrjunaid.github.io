@@ -12,7 +12,7 @@ const Navbar = () => {
         "
     >
       {data.map((item) => (
-        <Link href={item.link} key={item.name}>
+        <Link href={`#${item.link}`} key={item.name}>
           {item.name}
         </Link>
       ))}
