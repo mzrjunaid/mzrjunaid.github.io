@@ -17,6 +17,7 @@ export const FloatingSocialLinks = ({ size, socialLinkStyle }: SocialProps) => {
           target="__blank"
           className="group/item relative"
           key={item.url}
+          aria-label={item.media}
         >
           <SocialIcon icon={item.media.toLowerCase()} size={size} />
           <span className="invisible group-hover/item:visible absolute top-0 right-9 text-white bg-black/80  py-1 px-3 rounded-lg">
