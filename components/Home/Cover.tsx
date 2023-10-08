@@ -6,7 +6,7 @@ import junaid from "@/public/images/junaid.webp";
 
 const Cover = () => {
   return (
-    <div className="w-full h-[200px] overflow-hidden md:rounded-3xl relative bg-[url('../public/images/home/cover-2.webp')] bg-cover bg-no-repeat">
+    <div className="w-full h-[200px] overflow-hidden md:rounded-3xl relative bg-[url('../public/images/cover-2.webp')] bg-cover bg-no-repeat">
       <div className="absolute w-full h-full flex flex-row text-white px-3 md:px-16 backdrop-blur-[2px]">
         <div className="flex-1 flex flex-row w-full justify-between">
           <div className="flex items-center gap-2 md:gap-5">
