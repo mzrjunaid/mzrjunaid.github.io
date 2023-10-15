@@ -8,6 +8,7 @@
         "Tailwind CSS",
         "ReactJS",
         "NextJS",
+        "TypeScript",
         "Webpack",
         "Git",
         "Github Pages",
@@ -15,7 +16,25 @@
         "Figma"
       ],
       "imageName": "jadoo",
-      "url": "https://github.com/mzrjunaid/jadootravelagency"
+      "gitURL": "https://github.com/mzrjunaid/jadootravelagency",
+      "projectURL": "https://mzrjunaid.github.io/jadootravelagency/"
+    },
+    {
+      "project": "NextJS SEO Friendly Blog",
+      "lang": [
+        "ReactJS",
+        "NextJS",
+        "TypeScript",
+        "Styled Components",
+        "OpenGraph",
+        "Tailwind CSS",
+        "Webpack",
+        "Git",
+        "Vercel"
+      ],
+      "imageName": "codebucks",
+      "gitURL": "https://github.com/mzrjunaid/Nextjs-seo-friendly-blog",
+      "projectURL": "https://nextjs-seo-friendly-blog.vercel.app/"
     }
   ],
   "backendProjects": []

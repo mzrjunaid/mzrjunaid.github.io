@@ -6,7 +6,8 @@ type ProjectsProps = {
     project: string;
     lang: string[];
     imageName: string;
-    url: string;
+    gitURL: string;
+    projectURL: string;
   }[];
 };
 
@@ -17,11 +18,12 @@ const Projects = ({ data }: ProjectsProps) => {
         <div className="grid grid-flow-row md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 justify-center md:justify-normal px-4">
           {data.map((project) => (
             <Card
-              key={project.url}
+              key={project.gitURL}
               title={project.project}
               lang={project.lang}
               imageName={project.imageName}
-              url={project.url}
+              gitURL={project.gitURL}
+              projectURL={project.projectURL}
             />
           ))}
         </div>
