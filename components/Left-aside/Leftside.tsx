@@ -2,7 +2,7 @@
 import { useMenuContext } from "@/contexts/menu-context";
 import React from "react";
 import { LeftMenuSocialLinks } from "../Elements/SocialLinks";
-import Logo from "../Header/Logo";
+import Logo from "../Header/Logo_Old";
 import { RiCloseLine } from "react-icons/ri";
 import LeftMenu from "./LeftMenu";
 

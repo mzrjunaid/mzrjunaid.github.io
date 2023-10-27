@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <header className="w-full border-b px-3 py-3 z-50 absolute bg-slate-50 dark:bg-slate-900">
       <div className="mx-auto flex flex-row items-center justify-between 2xl:container">
-        <Logo />
+        <Logo bgColor="#FEF08A" fontColor="black" className="w-[45] h-12"/>
         <div className="flex flex-row items-center gap-10">
           <button
             type="button"
