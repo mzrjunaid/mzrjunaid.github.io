@@ -8,9 +8,6 @@ const Logo = ({ bgColor, fontColor, className }: LogoProps) => (
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
     id="Layer_1"
-    style={{
-      enableBackground: "new 0 0 150 38",
-    }}
     viewBox="0 0 150 38"
     className={className}
   >
